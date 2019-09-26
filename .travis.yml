@@ -4,7 +4,7 @@ python:
 before_install:
   - python --version
   - pip install -U pip
-  - pip install codecov
+  - pip install -U pytest
+  - pip install -U pytest-cov
 script:
-  - coverage run --source=com/moreaux/ -m unittest discovery;coverage report -m
-  - python -m unittest discover
+  - pytest --cov=com.moreaux com/moreaux/test
