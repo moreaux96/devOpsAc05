@@ -7,4 +7,4 @@ before_install:
   - pip install -U pytest
   - pip install -U pytest-cov
 script:
-  - pytest --cov=com.moreaux com/moreaux/test
+  - pytest -cov=com.moreaux com/moreaux/test
