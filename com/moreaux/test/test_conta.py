@@ -8,8 +8,8 @@ def test_alterarNome():
     assert conta_corrente.nomeCorrentista == "Anna Flávia"
 
 def test_deposito():
-    conta_corrente.deposito(500)
-    assert conta_corrente.saldo == 500
+    conta_corrente.deposito(150)
+    assert conta_corrente.saldo == 150
     conta_corrente.deposito(50)
     assert conta_corrente.saldo == 200
     
